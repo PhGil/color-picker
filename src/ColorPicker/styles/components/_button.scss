@@ -1,0 +1,43 @@
+%shared-btn-styles {
+  font-size: 12px;
+  font-weight: 400;
+  border: 1px solid $color-picker-gray !important;
+  height: 20px;
+}
+
+.button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: none;
+  transition: background-color 0.2s ease-in-out;
+  color: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+
+  &:hover {
+    background-color: $default-btn-hover;
+  }
+
+  &-secondary {
+    @extend %shared-btn-styles;
+    background-color: $secondary-btn;
+    color: $secondary-btn-color;
+    width: 60px;
+
+    &:hover {
+      background-color: $secondary-btn-hover;
+    }
+  }
+
+  &-success {
+    @extend %shared-btn-styles;
+    background-color: $success-btn;
+    color: $success-btn-color;
+    width: 40px;
+
+    &:hover {
+      background-color: $success-btn-hover;
+    }
+  }
+}
