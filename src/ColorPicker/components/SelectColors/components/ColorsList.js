@@ -2,11 +2,12 @@ import ColorListItem from "./ColorListItem";
 
 const ColorsList = ({ colors, setDropdownOpen }) => (
   <ul>
-    {colors.map((color, index) => (
+    {colors.map(({ colorName, hex }) => (
       <ColorListItem
-        {...color}
+        colorName={colorName}
+        hex={hex}
         setDropdownOpen={setDropdownOpen}
-        key={`color-item-${index}`}
+        key={hex}
       />
     ))}
   </ul>

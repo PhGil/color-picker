@@ -13,7 +13,9 @@ const DropdownWrapper = ({
   const dropdownRef = useRef(null);
   useCloseDropdown(isOpen, setIsOpen, dropdownRef, dropDownCloseCallback);
 
-  return isOpen ? (
+  if (!isOpen) return null;
+
+  return (
     <div
       className={joinClassNames("dropdown-wrapper", className)}
       ref={dropdownRef}
@@ -26,8 +28,6 @@ const DropdownWrapper = ({
       />
       {children}
     </div>
-  ) : (
-    <></>
   );
 };
 
