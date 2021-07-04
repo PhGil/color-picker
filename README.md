@@ -2,6 +2,12 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### Component props
+
+`value` - current color in HEX format;
+`onChange` - callback function that is executed when the color changes
+`colors` - list of colors for the drop-down menu with the given options
+
 ### Requirements
 
 - node.js v 14.0.0+
