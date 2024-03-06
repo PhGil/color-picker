@@ -27,5 +27,5 @@ Run commands:
 - `yarn`
 - `yarn build`
 
-After build command you get folder `/build` with statics pages.
-Then `./build/index.html` is index file of web application and ready to be served
+After the build command, you will get the folder `/build` with statics files.
+Then `./build/index.html` is the index file of the web application and it's ready to be served
